@@ -1,6 +1,4 @@
-﻿using System.Runtime.Serialization;
-
-namespace BigTyre.Phones.MusicOnHoldPlayer.Configuration
+﻿namespace BigTyre.Phones.MusicOnHoldPlayer.Configuration
 {
     internal class ConfigurationException : Exception
     {
@@ -13,10 +11,6 @@ namespace BigTyre.Phones.MusicOnHoldPlayer.Configuration
         }
 
         public ConfigurationException(string? message, Exception? innerException) : base(message, innerException)
-        {
-        }
-
-        protected ConfigurationException(SerializationInfo info, StreamingContext context) : base(info, context)
         {
         }
     }
